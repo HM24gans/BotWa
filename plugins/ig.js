@@ -4,7 +4,9 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!args[0]) throw `*Perintah ini untuk mengunduh postingan ig/reel/tv, bukan untuk highlight/story!*\n\ncontoh:\n${usedPrefix + command} https://www.instagram.com/p/BmjK1KOD_UG/?utm_medium=copy_link`
     if (!args[0].match(/https:\/\/www.instagram.com\/(p|reel|tv)/gi)) throw `*Link salah! Perintah ini untuk mengunduh postingan ig/reel/tv, bukan untuk highlight/story!*\n\ncontoh:\n${usedPrefix + command} https://www.instagram.com/p/BmjK1KOD_UG/?utm_medium=copy_link`
     const results = await instagramdlv3(args[0]).catch(async _ => await instagramdlv4(args[0]))
-    for (const { url } of results) await conn.sendFile(m.chat, url, 'instagram.mp4', `🔗 *Url:* ${await shortlink(url)}\n*${global.wm}*`, m)
+    for (const { url } of results) await conn.sendFile(m.chat, url, 'instagram.mp4', `🔗 *Url:* ${await shortlink(url)}\nDownloader By Hudha
+Suport BOT Agar Terus Aktif
+http://saweria.co/HudhaBot`, m)
 }
 
 handler.help = ['ig'].map(v => v + ' <url>')
