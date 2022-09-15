@@ -43,7 +43,7 @@ Hai, %ucapan %name! 👋
 %wit WIT
 *Hari:* %week
 *Tanggal:* %date
-*Uptime:* %uptime (%muptime)
+
 
 *Limit:* %limit
 *Level:* %level
