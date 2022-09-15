@@ -32,7 +32,7 @@ module.exports = {
                 if (typeof user !== 'object') db.data.users[m.sender] = {}
                 if (user) {
                     if (!isNumber(user.exp)) user.exp = 0
-                    if (!isNumber(user.limit)) user.limit = 1000
+                    if (!isNumber(user.limit)) user.limit = 10
                     if (!isNumber(user.joinlimit)) user.joinlimit = 1
                     if (!isNumber(user.money)) user.money = 100000
                     if (!isNumber(user.bank)) user.bank = 100000
@@ -284,7 +284,7 @@ module.exports = {
                     if (!isNumber(user.lastlatih)) user.lastlatih = 0
                 } else db.data.users[m.sender] = {
                     exp: 0,
-                    limit: 1000,
+                    limit: 10,
                     joinlimit: 1,
                     spammer: 0,
                     limitspam: 0,
@@ -986,7 +986,13 @@ global.dfail = (type, m, conn) => {
         rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
         owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
         mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-        premium: '*Premium*\n1 Months *IDR 10000*\n1 Years *IDR 90000*\n\nHubungi *owner* kami..', 
+        premium: '• Harga member premium (unlimited limit) 50k.
+• Pembayaran melalui dana/gopay/pulsa (khusus pulsa pajak 5k jadi 55k).
+• Member premium akan mendapat unlimited limit.
+• Premium akan selalu aktif saat bot juga aktif (bisa dibilang permanen).
+• Ketika bot berganti nomor, premium kamu akan tetap aktif.
+
+Bila berminat bergabung ke member premium silahkan chat owner: https://wa.me/6283174295037', 
         banned: 'Perintah ini hanya untuk pengguna yang terbanned..',
         created: 'Perintah ini hanya pengguna yang sudah membuat base\nContoh: #createbase Aine',
         group: 'Perintah ini hanya dapat digunakan di grup!',
