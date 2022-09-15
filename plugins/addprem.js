@@ -1,4 +1,4 @@
-let { MessageType } = require('@adiwajshing/baileys')
+/*let { MessageType } = require('@adiwajshing/baileys')
 let handler = async (m, { conn, text, usedPrefix }) => {
   function no(number){
     return number.replace(/\s/g,'').replace(/([@+-])/g,'')
@@ -7,8 +7,8 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   var hl = []
   hl[0] = text.split('|')[0]
   hl[0] = no(hl[0]) + "@s.whatsapp.net"
-  hl[1] = text.split('|')[1]
-  
+  hl[1] = text.split('|')[1]*/
+  /*
   if (!text) return conn.reply(m.chat, `*❏ GET NUMBER*\n\n• ${usedPrefix}prem number|days\n*Example:* ${usedPrefix}prem 6283174295037|99\n\n• ${usedPrefix}prem @tag|days\n*Example:* ${usedPrefix}prem @6283174295037|99`, m)
   if (typeof db.data.users[hl[0]] == 'undefined') throw 'Pengguna tidak ada didalam data base'
   var jumlahHari = 86400000 * hl[1]
@@ -26,8 +26,8 @@ handler.tags = ['owner']
 handler.command = /^(prem)$/i
 handler.owner = true
 handler.fail = null
-module.exports = handler
-
+module.exports = handler*/
+/*
 function msToDate(ms) {
   temp = ms
   days = Math.floor(ms / (24*60*60*1000));
@@ -40,3 +40,4 @@ function msToDate(ms) {
   return days+"H "+hours+"J "+ minutes + "M";
   // +minutes+":"+sec;
 }
+*/
